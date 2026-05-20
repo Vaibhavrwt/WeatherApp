@@ -33,7 +33,7 @@ const App = () => {
 // 
   const fetchSuggestions = async (query) => {
     try{
-      const res = await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${query}&limit=5&appid=${API_KEY}`);
+      const res = await fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${query}&limit=5&appid=${API_KEY}`);
       res.ok ? setSuggestion(await res.json()) : setSuggestion([]);
     }
     catch{
@@ -164,7 +164,7 @@ const App = () => {
                     </button>
                   </div>
 
-                  <img src={`http://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`} 
+                  <img src={`https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`} 
                        alt={weather.weather[0].description}
                       className='mx-auto my-4 animate-bounce' />
 
