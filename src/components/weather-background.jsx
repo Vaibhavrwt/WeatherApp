@@ -44,7 +44,7 @@ const WeatherBackground = ({ condition }) => {
     return(
         <div className='fixed inset-0 z-0 overflow-hidden'>
             {background === video ? (
-                <video autoPlay loop muted className='w-full h-full object-cover opacity-100 pointer-events-none animate-fade-in'>
+                <video autoPlay loop muted className='w-full h-full object-cover opacity-100 pointer-events-none animate-fade-in '>
                     <source src={video} typeof='video/mp4'/>
                 </video>
             ) : (

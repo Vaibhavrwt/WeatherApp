@@ -85,6 +85,7 @@ const App = () => {
   return (
     <div>
       <WeatherBackground condition={getWeatherCondition()} />
+      
 
       <div className='flex items-center justify-center p-6 min-h-screen '>
         
